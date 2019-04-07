@@ -20,7 +20,7 @@ http://www.loyalty.org/~schoen/rsa/
 #### Step 2: Extract the public keys from the certificate files into separate files:
  
     $openssl x509 -pubkey -noout -in Ransom_File_001.txt__cert.pem > Ransom_File_001.txt__pubkey.pem
-    $openssl x509 -pubkey -noout -in Ransom_File_001.txt__cert.pem > Ransom_File_001.txt__pubkey.pem
+    $openssl x509 -pubkey -noout -in Ransom_File_002.txt__cert.pem > Ransom_File_002.txt__pubkey.pem
 
 
 #### Steps 3, 4 and 5 are all done in a one-linner

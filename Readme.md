@@ -25,11 +25,9 @@ http://www.loyalty.org/~schoen/rsa/
 
 #### Steps 3, 4 and 5 are all done in a one-linner
 
-**Step 3: Get the n1 and n2 values from the public keys respectively and calculate the greatest common denominator**
-
-**Step 4: Calculate the greatest common denominator and factorise n1 into p1 and gcd and n2 into p2 and gcd**
-
-**Step 5: Generate private key files from p1 and gcd and from p2 and gcd**
+3. Get the n1 and n2 values from the public keys respectively and calculate the greatest common denominator
+4. Calculate the greatest common denominator and factorise n1 into p1 and gcd and n2 into p2 and gcd
+5. Generate private key files from p1 and gcd and from p2 and gcd
 
 
 First, compile this binary from the source provided, which will create a private key file from the p and q values. The source code is kept in this repository as backup, and it's originally linked in the article mentioned above.

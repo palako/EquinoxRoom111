@@ -52,5 +52,5 @@ $openssl rsautl -decrypt -inkey Ransom_File_002.txt__privkey.pem -in Ransom_File
 #### Step 8: Decrypt the encrypted files with encryption keys using the aes-256-cbc as indicated by the <FileEncryptionAlg> element
 ```
 $openssl enc -d -aes-256-cbc -in Ransom_File_001.txt__encrypted_file.raw -out Ransom_File_001.txt__original.txt -pass file:./Ransom_File_001.txt__aes.pass
-$openssl enc -d -aes-256-cbc -in encryptedFile2.raw -out file2.txt -pass file:./fileEncryptionKey2.txt 
+$openssl enc -d -aes-256-cbc -in Ransom_File_002.txt__encrypted_file.raw -out Ransom_File_002.txt__original.txt -pass file:./fRansom_File_002.txt__aes.pass
 ```

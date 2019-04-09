@@ -41,7 +41,7 @@ $python gcd.py `openssl rsa -in Ransom_File_001.txt__pubkey.pem -pubin -modulus 
 #### Step 6: Extract the private key pem to a different file.
 ```
 $grep -n  'BEGIN RSA PRIVATE KEY' Ransom_File_001.txt__privkey.key | cut -d ':' -f 1 | xargs -I{} tail -n +{} Ransom_File_001.txt__privkey.key > Ransom_File_001.txt__privkey.pem
-$grep -n  'BEGIN RSA PRIVATE KEY' Ransom_File_001.txt__privkey.key | cut -d ':' -f 1 | xargs -I{} tail -n +{} Ransom_File_002.txt__privkey.key > Ransom_File_002.txt__privkey.pem
+$grep -n  'BEGIN RSA PRIVATE KEY' Ransom_File_002.txt__privkey.key | cut -d ':' -f 1 | xargs -I{} tail -n +{} Ransom_File_002.txt__privkey.key > Ransom_File_002.txt__privkey.pem
 ```
 
 #### Step 7: Decrypt the file encryption keys using the private keys

@@ -29,7 +29,7 @@ First, compile this binary from the source provided, which will create a private
 ```
 $clang private-from-pq.c -I /usr/local/include /usr/local/opt/openssl/lib/libcrypto.a  -o private-from-pq
 ```
-3. Get the n1 and n2 values from the public keys respectively and calculate the greatest common denominator
+3. Get the n1 and n2 values from each of the public keys respectively
 4. Calculate the greatest common denominator and factorise n1 into p1 and gcd and n2 into p2 and gcd
 5. Generate private key files from p1 and gcd and from p2 and gcd
 ```
